@@ -1,0 +1,925 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CAB Survey</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
+	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive"
+	/>
+	<meta name="author" content="freehtml5.co" />
+	<!-- Fontawesome Icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- 
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE 
+	DESIGNED & DEVELOPED by FreeHTML5.co
+		
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	//////////////////////////////////////////////////////
+	 -->
+
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="" />
+	<meta property="og:description" content="" />
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+	<style>
+		canvas {
+			-moz-user-select: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+		}
+	</style>
+
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+
+	<!-- Pricing -->
+	<link rel="stylesheet" href="css/pricing.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+
+	<div class="fh5co-loader"></div>
+
+	<div id="page">
+
+		<aside id="fh5co-hero">
+			<div class="flexslider">
+				<ul class="slides">
+					<li style="background-image: url(images/img_bg_1.jpg);">
+						<div class="overlay-gradient"></div>
+						<div class="container">
+							<div class="row">
+								<div class="col-md-8 col-md-offset-2 text-center slider-text">
+									<div class="slider-text-inner">
+										<h1>The Roots of Education are Bitter, But the Fruit is Sweet</h1>
+										<h2>Brought to you by
+											<a href="http://freehtml5.co/" target="_blank">freehtml5.co</a>
+										</h2>
+										<p>
+											<a class="btn btn-primary btn-lg" href="#">Start Learning Now!</a>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li style="background-image: url(images/img_bg_2.jpg);">
+						<div class="overlay-gradient"></div>
+						<div class="container">
+							<div class="row">
+								<div class="col-md-8 col-md-offset-2 text-center slider-text">
+									<div class="slider-text-inner">
+										<h1>The Great Aim of Education is not Knowledge, But Action</h1>
+										<h2>Brought to you by
+											<a href="http://freehtml5.co/" target="_blank">freehtml5.co</a>
+										</h2>
+										<p>
+											<a class="btn btn-primary btn-lg btn-learn" href="#">Start Learning Now!</a>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li style="background-image: url(images/img_bg_3.jpg);">
+						<div class="overlay-gradient"></div>
+						<div class="container">
+							<div class="row">
+								<div class="col-md-8 col-md-offset-2 text-center slider-text">
+									<div class="slider-text-inner">
+										<h1>We Help You to Learn New Things</h1>
+										<h2>Brought to you by
+											<a href="http://freehtml5.co/" target="_blank">freehtml5.co</a>
+										</h2>
+										<p>
+											<a class="btn btn-primary btn-lg btn-learn" href="#">Start Learning Now!</a>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</aside>
+
+		<div id="fh5co-course">
+			<div class="container">
+				<div class="row animate-box">
+					<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+						<h2>STATE WISE</h2>
+						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor
+							eius.
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 animate-box">
+						<h3>Statewise Mean Height</h3>
+
+						<div style="width : 75%">
+							<canvas id="meanheight" width="800px"></canvas>
+						</div>
+
+
+					</div>
+					<div class="col-md-12 animate-box">
+						<h3>Statewise Mean Height (Males)</h3>
+
+						<div style="width : 75%">
+							<canvas id="meanheightmale" width="800px"></canvas>
+						</div>
+
+
+					</div>
+
+					<div class="col-md-12 animate-box">
+						<h3>Statewise Mean Height (Females)</h3>
+
+						<div style="width : 75%">
+							<canvas id="meanheightfemale" width="800px"></canvas>
+						</div>
+
+
+					</div>
+
+					<div class="col-md-12 animate-box">
+						<h3>Statewise Mean Weight</h3>
+
+						<div style="width : 75%">
+							<canvas id="meanweight" width="800px"></canvas>
+						</div>
+
+
+					</div>
+
+					<div class="col-md-12 animate-box">
+						<h3>Statewise Mean Weight (Males)</h3>
+
+						<div style="width : 75%">
+							<canvas id="meanweightmale" width="800px"></canvas>
+						</div>
+
+
+					</div>
+
+					<div class="col-md-12 animate-box">
+						<h3>Statewise Mean Weight (Females)</h3>
+
+						<div style="width : 75%">
+							<canvas id="meanweightfemale" width="800px"></canvas>
+						</div>
+
+
+					</div>
+
+					<div class="col-md-12 animate-box">
+						<h3>Statewise Haemoglobin Level</h3>
+
+						<div style="width : 75%">
+							<canvas id="haemoglobinlevel" width="800px"></canvas>
+						</div>
+
+
+					</div>
+
+					<div class="col-md-12 animate-box">
+						<h3>Statewise First Breastfeed</h3>
+
+						<div style="width : 75%">
+							<canvas id="within1hourbf" width="800px"></canvas>
+						</div>
+
+						<div style="width : 75%">
+							<canvas id="neverbf" width="800px"></canvas>
+						</div>
+
+					</div>
+
+					<!-- <div class="col-md-12 animate-box">
+						<h3>Statewise breastfeed after 1 hour of Birth</h3>
+
+						<div style="width : 75%">
+							<canvas id="after1hourbf" width="800px"></canvas>
+						</div>
+
+
+					</div>
+
+					<div class="col-md-12 animate-box">
+						<h3>Statewise breastfeed within 2 to 3 days of Birth</h3>
+
+						<div style="width : 75%">
+							<canvas id="within2_3daysbf" width="800px"></canvas>
+						</div>
+
+
+					</div>
+
+					<div class="col-md-12 animate-box">
+						<h3>Statewise breastfeed after 3 days of Birth</h3>
+
+						<div style="width : 75%">
+							<canvas id="after3daysbf" width="800px"></canvas>
+						</div>
+
+
+					</div> -->
+
+					<!-- <div class="col-md-12 animate-box">
+						<h3>Breastfeed Rajsthan.</h3>
+
+						<div style="width : 75%">
+							<canvas id="rjbf" width="800px"></canvas>
+						</div>
+
+
+					</div> -->
+
+					<div class="col-md-6 animate-box">
+
+						<h3>Total Breast Feeding</h3>
+						<div style="width : 100%">
+							<canvas id="totalbf" width="800px"></canvas>
+						</div>
+
+
+					</div>
+
+					<div class="col-md-6 animate-box">
+
+						<h3>Uttarakhand</h3>
+						<div style="width : 100%">
+							<canvas id="uttarakhandillness" width="800px"></canvas>
+						</div>
+
+
+					</div>
+
+					<div class="col-md-6 animate-box">
+
+						<h3>Rajasthan</h3>
+						<div style="width : 100%">
+							<canvas id="rajasthanillness" width="800px"></canvas>
+						</div>
+
+
+					</div>
+
+					<div class="col-md-6 animate-box">
+
+						<h3>Uttar Pradesh</h3>
+						<div style="width : 100%">
+							<canvas id="upillness" width="800px"></canvas>
+						</div>
+
+
+					</div>
+
+					<div class="col-md-6 animate-box">
+
+						<h3>Bihar</h3>
+						<div style="width : 100%">
+							<canvas id="biharillness" width="800px"></canvas>
+						</div>
+
+
+					</div>
+					<div class="col-md-6 animate-box">
+
+						<h3>Assam</h3>
+						<div style="width : 100%">
+							<canvas id="assamillness" width="800px"></canvas>
+						</div>
+
+
+					</div>
+
+					<div class="col-md-6 animate-box">
+
+						<h3>Jharkhand</h3>
+						<div style="width : 100%">
+							<canvas id="jharkhandillness" width="800px"></canvas>
+						</div>
+
+
+					</div>
+					<div class="col-md-6 animate-box">
+
+						<h3>Odisha</h3>
+						<div style="width : 100%">
+							<canvas id="odishaillness" width="800px"></canvas>
+						</div>
+
+
+					</div>
+
+					<div class="col-md-6 animate-box">
+
+						<h3>Chhattisgarh</h3>
+						<div style="width : 100%">
+							<canvas id="chillness" width="800px"></canvas>
+						</div>
+
+
+					</div>
+
+					<div class="col-md-6 animate-box">
+
+						<h3>Madhya Pradesh</h3>
+						<div style="width : 100%">
+							<canvas id="mpillness" width="800px"></canvas>
+						</div>
+
+
+					</div>
+					<div class="col-md-12 animate-box">
+						<div class="course">
+							<div class="desc">
+								<h3>
+									<a href="#">Web Master</a>
+								</h3>
+								<div>
+									<canvas id="canvas"></canvas>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12 animate-box">
+						<div class="course">
+							<div class="desc">
+								<h3>
+									<a href="#">Business &amp; Accounting</a>
+								</h3>
+								<div id="canvas-holder">
+									<canvas id="chart-area"></canvas>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12 animate-box">
+						<div class="course">
+							<div class="desc">
+								<h3>
+									<a href="#">Science &amp; Technology</a>
+								</h3>
+								<div>
+									<canvas id="scatter1"></canvas>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12 animate-box">
+						<div class="course">
+
+							<div class="desc">
+								<h3>
+									<a href="#">Health &amp; Psychology</a>
+								</h3>
+								<div>
+									<canvas id="scatter2"></canvas>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="fh5co-testimonial" style="background-image: url(images/school.jpg);">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row animate-box">
+					<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+						<h2>
+							<span>Testimonials</span>
+						</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+						<div class="row animate-box">
+							<div class="owl-carousel owl-carousel-fullwidth">
+								<div class="item">
+									<div class="testimony-slide active text-center">
+										<div class="user" style="background-image: url(images/person1.jpg);"></div>
+										<span>Mary Walker
+											<br>
+											<small>Students</small>
+										</span>
+										<blockquote>
+											<p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+												blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+										</blockquote>
+									</div>
+								</div>
+								<div class="item">
+									<div class="testimony-slide active text-center">
+										<div class="user" style="background-image: url(images/person2.jpg);"></div>
+										<span>Mike Smith
+											<br>
+											<small>Students</small>
+										</span>
+										<blockquote>
+											<p>&ldquo;Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+										</blockquote>
+									</div>
+								</div>
+								<div class="item">
+									<div class="testimony-slide active text-center">
+										<div class="user" style="background-image: url(images/person3.jpg);"></div>
+										<span>Rita Jones
+											<br>
+											<small>Teacher</small>
+										</span>
+										<blockquote>
+											<p>&ldquo;Far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
+												right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+										</blockquote>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="fh5co-blog">
+			<div class="container">
+				<div class="row animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+						<h2>Blog &amp; Events</h2>
+						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor
+							eius.
+						</p>
+					</div>
+				</div>
+				<div class="row row-padded-mb">
+					<div class="col-md-4 animate-box">
+						<div class="fh5co-event">
+							<div class="date text-center">
+								<span>15
+									<br>Mar.</span>
+							</div>
+							<h3>
+								<a href="#">USA, International Triathlon Event</a>
+							</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<p>
+								<a href="#">Read More</a>
+							</p>
+						</div>
+					</div>
+					<div class="col-md-4 animate-box">
+						<div class="fh5co-event">
+							<div class="date text-center">
+								<span>15
+									<br>Mar.</span>
+							</div>
+							<h3>
+								<a href="#">USA, International Triathlon Event</a>
+							</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<p>
+								<a href="#">Read More</a>
+							</p>
+						</div>
+					</div>
+					<div class="col-md-4 animate-box">
+						<div class="fh5co-event">
+							<div class="date text-center">
+								<span>15
+									<br>Mar.</span>
+							</div>
+							<h3>
+								<a href="#">New Device Develope by Microsoft</a>
+							</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<p>
+								<a href="#">Read More</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-4">
+						<div class="fh5co-blog animate-box">
+							<a href="#" class="blog-img-holder" style="background-image: url(images/project-1.jpg);"></a>
+							<div class="blog-text">
+								<h3>
+									<a href="#">Healty Lifestyle &amp; Living</a>
+								</h3>
+								<span class="posted_on">March. 15th</span>
+								<span class="comment">
+									<a href="">21
+										<i class="icon-speech-bubble"></i>
+									</a>
+								</span>
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4">
+						<div class="fh5co-blog animate-box">
+							<a href="#" class="blog-img-holder" style="background-image: url(images/project-2.jpg);"></a>
+							<div class="blog-text">
+								<h3>
+									<a href="#">Healty Lifestyle &amp; Living</a>
+								</h3>
+								<span class="posted_on">March. 15th</span>
+								<span class="comment">
+									<a href="">21
+										<i class="icon-speech-bubble"></i>
+									</a>
+								</span>
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4">
+						<div class="fh5co-blog animate-box">
+							<a href="#" class="blog-img-holder" style="background-image: url(images/project-3.jpg);"></a>
+							<div class="blog-text">
+								<h3>
+									<a href="#">Healty Lifestyle &amp; Living</a>
+								</h3>
+								<span class="posted_on">March. 15th</span>
+								<span class="comment">
+									<a href="">21
+										<i class="icon-speech-bubble"></i>
+									</a>
+								</span>
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="fh5co-pricing" class="fh5co-bg-section">
+			<div class="container">
+				<div class="row animate-box">
+					<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+						<h2>Plan &amp; Pricing</h2>
+						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor
+							eius.
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="pricing pricing--rabten">
+						<div class="col-md-4 animate-box">
+							<div class="pricing__item">
+								<div class="wrap-price">
+									<!-- <div class="icon icon-user2"></div> -->
+									<h3 class="pricing__title">Trial</h3>
+									<!-- <p class="pricing__sentence">Single user license</p> -->
+								</div>
+								<div class="pricing__price">
+									<span class="pricing__anim pricing__anim--1">
+										<span class="pricing__currency">$</span>0
+									</span>
+									<span class="pricing__anim pricing__anim--2">
+										<span class="pricing__period">per year</span>
+									</span>
+								</div>
+								<div class="wrap-price">
+									<ul class="pricing__feature-list">
+										<li class="pricing__feature">One Day Trial</li>
+										<li class="pricing__feature">Limited Courses</li>
+										<li class="pricing__feature">Free 3 Lessons</li>
+										<li class="pricing__feature">No Supporter</li>
+										<li class="pricing__feature">No Tutorial</li>
+										<li class="pricing__feature">No Ebook</li>
+										<li class="pricing__feature">Limited Registered User</li>
+									</ul>
+									<button class="pricing__action">Choose plan</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 animate-box">
+							<div class="pricing__item">
+								<div class="wrap-price">
+									<!-- <div class="icon icon-store"></div> -->
+									<h3 class="pricing__title">Silver</h3>
+									<!-- <p class="pricing__sentence">Up to 5 users</p> -->
+								</div>
+								<div class="pricing__price">
+									<span class="pricing__anim pricing__anim--1">
+										<span class="pricing__currency">$</span>79
+									</span>
+									<span class="pricing__anim pricing__anim--2">
+										<span class="pricing__period">per year</span>
+									</span>
+								</div>
+								<div class="wrap-price">
+									<ul class="pricing__feature-list">
+										<li class="pricing__feature">One Year Standard Access</li>
+										<li class="pricing__feature">Limited Courses</li>
+										<li class="pricing__feature">300+ Lessons</li>
+										<li class="pricing__feature">Random Supporter</li>
+										<li class="pricing__feature">View Only Ebook</li>
+										<li class="pricing__feature">Standard Tutorials</li>
+										<li class="pricing__feature">Unlimited Registered User</li>
+									</ul>
+									<button class="pricing__action">Choose plan</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 animate-box">
+							<div class="pricing__item">
+								<div class="wrap-price">
+									<!-- <div class="icon icon-home2"></div> -->
+									<h3 class="pricing__title">Gold</h3>
+									<!-- <p class="pricing__sentence">Unlimited users</p> -->
+								</div>
+								<div class="pricing__price">
+									<span class="pricing__anim pricing__anim--1">
+										<span class="pricing__currency">$</span>499
+									</span>
+									<span class="pricing__anim pricing__anim--2">
+										<span class="pricing__period">per year</span>
+									</span>
+								</div>
+								<div class="wrap-price">
+									<ul class="pricing__feature-list">
+										<li class="pricing__feature">Life Time Access</li>
+										<li class="pricing__feature">Unlimited All Courses</li>
+										<li class="pricing__feature">7000+ Lessons &amp; Growing</li>
+										<li class="pricing__feature">Free Supporter</li>
+										<li class="pricing__feature">Free Ebook Downloads</li>
+										<li class="pricing__feature">Premium Tutorials</li>
+										<li class="pricing__feature">Unlimited Registered User</li>
+									</ul>
+									<button class="pricing__action">Choose plan</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="fh5co-register" style="background-image: url(images/img_bg_2.jpg);">
+			<div class="overlay"></div>
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 animate-box">
+					<div class="date-counter text-center">
+						<h2>Get 400 of Online Courses for Free</h2>
+						<h3>By Mike Smith</h3>
+						<div class="simply-countdown simply-countdown-one"></div>
+						<p>
+							<strong>Limited Offer, Hurry Up!</strong>
+						</p>
+						<p>
+							<a href="#" class="btn btn-primary btn-lg btn-reg">Register Now!</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="fh5co-gallery" class="fh5co-bg-section">
+			<div class="row text-center">
+				<h2>
+					<span>Instagram Gallery</span>
+				</h2>
+			</div>
+			<div class="row">
+				<div class="col-md-3 col-padded">
+					<a href="#" class="gallery" style="background-image: url(images/project-5.jpg);"></a>
+				</div>
+				<div class="col-md-3 col-padded">
+					<a href="#" class="gallery" style="background-image: url(images/project-2.jpg);"></a>
+				</div>
+				<div class="col-md-3 col-padded">
+					<a href="#" class="gallery" style="background-image: url(images/project-3.jpg);"></a>
+				</div>
+				<div class="col-md-3 col-padded">
+					<a href="#" class="gallery" style="background-image: url(images/project-4.jpg);"></a>
+				</div>
+			</div>
+		</div>
+
+		<footer id="fh5co-footer" role="contentinfo" style="background-image: url(images/img_bg_4.jpg);">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row row-pb-md">
+					<div class="col-md-3 fh5co-widget">
+						<h3>About Education</h3>
+						<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa
+							amet.
+						</p>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
+						<h3>Learning</h3>
+						<ul class="fh5co-footer-links">
+							<li>
+								<a href="#">Course</a>
+							</li>
+							<li>
+								<a href="#">Blog</a>
+							</li>
+							<li>
+								<a href="#">Contact</a>
+							</li>
+							<li>
+								<a href="#">Terms</a>
+							</li>
+							<li>
+								<a href="#">Meetups</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
+						<h3>Learn &amp; Grow</h3>
+						<ul class="fh5co-footer-links">
+							<li>
+								<a href="#">Blog</a>
+							</li>
+							<li>
+								<a href="#">Privacy</a>
+							</li>
+							<li>
+								<a href="#">Testimonials</a>
+							</li>
+							<li>
+								<a href="#">Handbook</a>
+							</li>
+							<li>
+								<a href="#">Held Desk</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
+						<h3>Engage us</h3>
+						<ul class="fh5co-footer-links">
+							<li>
+								<a href="#">Marketing</a>
+							</li>
+							<li>
+								<a href="#">Visual Assistant</a>
+							</li>
+							<li>
+								<a href="#">System Analysis</a>
+							</li>
+							<li>
+								<a href="#">Advertise</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
+						<h3>Legal</h3>
+						<ul class="fh5co-footer-links">
+							<li>
+								<a href="#">Find Designers</a>
+							</li>
+							<li>
+								<a href="#">Find Developers</a>
+							</li>
+							<li>
+								<a href="#">Teams</a>
+							</li>
+							<li>
+								<a href="#">Advertise</a>
+							</li>
+							<li>
+								<a href="#">API</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="row copyright">
+					<div class="col-md-12 text-center">
+						<p>
+							<small class="block">&copy; 2016 Free HTML5. All Rights Reserved.</small>
+							<small class="block">Designed by
+								<a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a> Demo Images:
+								<a href="http://unsplash.co/" target="_blank">Unsplash</a> &amp;
+								<a href="https://www.pexels.com/" target="_blank">Pexels</a>
+							</small>
+						</p>
+					</div>
+				</div>
+
+			</div>
+		</footer>
+	</div>
+
+	<!-- <div class="gototop js-top">
+		<a href="#" class="js-gotop">Prediction</a>
+	</div> -->
+	<div id="floating-button">
+		<button id="prediction" onclick="predict">PREDICTION</button>
+		<div id="predictionmodal" class="modal">
+
+			<!-- Modal content -->
+			<div class="modal-content">
+			  <span class="close">&times;</span>
+			  <p>Some text in the Modal..</p>
+			</div>
+		  
+		</div>
+	</div>
+	<!--
+		Modal for prediction 
+	-->
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- countTo -->
+	<script src="js/jquery.countTo.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<!-- Count Down -->
+	<script src="js/simplyCountdown.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+	<script src="js/script.js"></script>
+	<script>
+		var d = new Date(new Date().getTime() + 1000 * 120 * 120 * 2000);
+
+		// default example
+		simplyCountdown('.simply-countdown-one', {
+			year: d.getFullYear(),
+			month: d.getMonth() + 1,
+			day: d.getDate()
+		});
+
+		//jQuery example
+		$('#simply-countdown-losange').simplyCountdown({
+			year: d.getFullYear(),
+			month: d.getMonth() + 1,
+			day: d.getDate(),
+			enableUtc: false
+		});
+	</script>
+	<script src="./charts/Chart.bundle.js"></script>
+	<script src="./charts/utils.js"></script>
+	<script src="./charts/charts.js"></script>
+</body>
+
+</html>
