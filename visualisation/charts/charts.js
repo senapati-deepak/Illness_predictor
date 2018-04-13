@@ -124,63 +124,27 @@ var within1HourBF = {
         borderColor: window.chartColors.red,
         borderWidth: 1,
         data: [
-            65.506428, 51.360336, 51.119929, 57.835133, 66.132404, 62.241336, 86.714145, 90.937647, 80.767300]
+            65.506428, 51.360336, 51.119929, 57.835133, 66.132404, 62.241336, 86.714145, 90.937647, 80.767300
+        ]
     },{
         label: "within 1-24 hour of birth",
         backgroundColor: color(window.chartColors.orange).alpha(0.5).rgbString(),
         borderColor: window.chartColors.orange,
         borderWidth: 1,
         data: [
-            30.448416, 44.930452, 36.928277, 41.675007, 32.766551, 35.003740, 11.214800, 8.277054, 17.755468]
+            30.448416, 44.930452, 36.928277, 41.675007, 32.766551, 35.003740, 11.214800, 8.277054, 17.755468
+        ]
     },{
         label: "within 2-3 days of birth",
         backgroundColor: color(window.chartColors.green).alpha(0.5).rgbString(),
         borderColor: window.chartColors.green,
         borderWidth: 1,
         data: [
-            2.916275, 3.158079, 9.882422, 0.363445, 0.501742, 1.421092, 1.424361, 0.439768, 1.233417]
+            2.916275, 3.158079, 9.882422, 0.363445, 0.501742, 1.421092, 1.424361, 0.439768, 1.233417
+        ]
     }]
 
 };
-
-// var after1HourBF = {
-//     labels: ['Uttarakhand', 'Rajasthan', 'Uttar Pradesh', 'Bihar', 'Assam', 'Jharkhand', 'Odisha', 'Chhattisgarh', 'Madhya Pradesh'],
-//     datasets: [{
-//         label: "in percentage",
-//         backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
-//         borderColor: window.chartColors.red,
-//         borderWidth: 1,
-//         data: [
-//             34.117278, 48.569679, 48.627277, 42.096392, 33.449478, 37.222638, 13.089390, 9.030942, 19.196845]
-//     }]
-
-// };
-
-// var within2_3DaysBF = {
-//     labels: ['Uttarakhand', 'Rajasthan', 'Uttar Pradesh', 'Bihar', 'Assam', 'Jharkhand', 'Odisha', 'Chhattisgarh', 'Madhya Pradesh'],
-//     datasets: [{
-//         label: "in percentage",
-//         backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
-//         borderColor: window.chartColors.red,
-//         borderWidth: 1,
-//         data: [
-//             2.916275, 3.158079, 9.882422, 0.363445, 0.501742, 1.421092, 1.424361, 0.439768, 1.233417]
-//     }]
-
-// };
-
-// var after3DaysBF = {
-//     labels: ['Uttarakhand', 'Rajasthan', 'Uttar Pradesh', 'Bihar', 'Assam', 'Jharkhand', 'Odisha', 'Chhattisgarh', 'Madhya Pradesh'],
-//     datasets: [{
-//         label: "in percentage",
-//         backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
-//         borderColor: window.chartColors.red,
-//         borderWidth: 1,
-//         data: [
-//             0.752587, 0.481148, 1.816578, 0.057940, 0.181185, 0.398903, 0.450229, 0.314120, 0.207960]
-//     }]
-
-// };
 
 var neverBF = {
     labels: ['Uttarakhand', 'Rajasthan', 'Uttar Pradesh', 'Bihar', 'Assam', 'Jharkhand', 'Odisha', 'Chhattisgarh', 'Madhya Pradesh'],
@@ -190,30 +154,89 @@ var neverBF = {
         borderColor: window.chartColors.yellow,
         borderWidth: 1,
         data: [
-            0.752587, 0.481148, 1.816578, 0.057940, 0.181185, 0.398903, 0.450229, 0.314120, 0.207960]
+            0.752587, 0.481148, 1.816578, 0.057940, 0.181185, 0.398903, 0.450229, 0.314120, 0.207960
+        ]
     },{
         label: "never breastfeed",
         backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
         borderColor: window.chartColors.blue,
         borderWidth: 1,
         data: [
-            0.376294, 0.069985, 0.252792, 0.068475, 0.418118, 0.934929, 0.196464, 0.031412, 0.035855]
+            0.376294, 0.069985, 0.252792, 0.068475, 0.418118, 0.934929, 0.196464, 0.031412, 0.035855
+        ]
     }]
 
 };
 
-// var rajasthanBF = {
-//     labels: ['within 1 hour', '1 to 24 hour', '2-3 days', 'after 3 days', 'never'],
-//     datasets: [{
-//         label: "in percentage",
-//         backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
-//         borderColor: window.chartColors.red,
-//         borderWidth: 1,
-//         data: [
-//             51.360336, 44.930452, 3.158079, 0.481148, 0.069985]
-//     }]
+var waterMonth = {
+    labels: ['Uttarakhand', 'Rajasthan', 'Uttar Pradesh', 'Bihar', 'Assam', 'Jharkhand', 'Odisha', 'Chhattisgarh', 'Madhya Pradesh'],
+    datasets: [{
+        label: "in percentage grams",
+        backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
+        borderColor: window.chartColors.red,
+        borderWidth: 1,
+        data: [
+            5.325180, 5.260957, 3.860964, 4.237293, 5.300627, 5.298803, 5.544368, 4.424533, 5.332951
+        ]
+    }]
 
-// };
+};
+
+var animalMilkMonth = {
+    labels: ['Uttarakhand', 'Rajasthan', 'Uttar Pradesh', 'Bihar', 'Assam', 'Jharkhand', 'Odisha', 'Chhattisgarh', 'Madhya Pradesh'],
+    datasets: [{
+        label: "in percentage grams",
+        backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
+        borderColor: window.chartColors.red,
+        borderWidth: 1,
+        data: [
+            4.777360, 5.167702, 3.679659, 5.111035, 5.370592, 3.616679, 2.718075, 3.802576, 5.763428
+        ]
+    }]
+
+};
+
+var semiSolidFood = {
+    labels: ['Uttarakhand', 'Rajasthan', 'Uttar Pradesh', 'Bihar', 'Assam', 'Jharkhand', 'Odisha', 'Chhattisgarh', 'Madhya Pradesh'],
+    datasets: [{
+        label: "in percentage grams",
+        backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
+        borderColor: window.chartColors.red,
+        borderWidth: 1,
+        data: [
+            7.160865, 6.278978, 6.026308, 6.063629, 5.951220, 6.464099, 5.762688, 4.007853, 5.616207
+        ]
+    }]
+
+};
+
+var solidFood = {
+    labels: ['Uttarakhand', 'Rajasthan', 'Uttar Pradesh', 'Bihar', 'Assam', 'Jharkhand', 'Odisha', 'Chhattisgarh', 'Madhya Pradesh'],
+    datasets: [{
+        label: "in percentage grams",
+        backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
+        borderColor: window.chartColors.red,
+        borderWidth: 1,
+        data: [
+            8.337723, 5.725921, 6.779306, 7.635238, 6.966411, 7.036026, 5.753029, 3.719805, 5.760488
+        ]
+    }]
+
+};
+
+var vegetableFood = {
+    labels: ['Uttarakhand', 'Rajasthan', 'Uttar Pradesh', 'Bihar', 'Assam', 'Jharkhand', 'Odisha', 'Chhattisgarh', 'Madhya Pradesh'],
+    datasets: [{
+        label: "in percentage grams",
+        backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
+        borderColor: window.chartColors.red,
+        borderWidth: 1,
+        data: [
+            7.902791, 6.094655, 6.427102, 7.934422, 7.164878, 7.038145, 5.625246, 3.880635, 5.851990
+        ]
+    }]
+
+};
 // end of bargraphs
 
 // start of piechart
@@ -775,62 +798,7 @@ window.onload = function () {
         }
     });
 
-    // var meanChartAfter1HourBF = document.getElementById('after1hourbf').getContext('2d');
-    // window.myBar = new Chart(meanChartAfter1HourBF, {
-    //     type: 'bar',
-    //     data: after1HourBF,
-    //     options: {
-    //         scales: {
-    //             yAxes: [{
-    //                 ticks: {
-    //                     min: 0
-    //                 }
-    //             }]
-    //         },
-    //         responsive: true,
-    //         legend: {
-    //             position: 'top',
-    //         }
-    //     }
-    // });
-
-    // var meanChartWithin2_3DaysBF = document.getElementById('within2_3daysbf').getContext('2d');
-    // window.myBar = new Chart(meanChartWithin2_3DaysBF, {
-    //     type: 'bar',
-    //     data: within2_3DaysBF,
-    //     options: {
-    //         scales: {
-    //             yAxes: [{
-    //                 ticks: {
-    //                     min: 0
-    //                 }
-    //             }]
-    //         },
-    //         responsive: true,
-    //         legend: {
-    //             position: 'top',
-    //         }
-    //     }
-    // });
-
-    // var meanChartAfter3DaysBF = document.getElementById('after3daysbf').getContext('2d');
-    // window.myBar = new Chart(meanChartAfter3DaysBF, {
-    //     type: 'bar',
-    //     data: after3DaysBF,
-    //     options: {
-    //         scales: {
-    //             yAxes: [{
-    //                 ticks: {
-    //                     min: 0
-    //                 }
-    //             }]
-    //         },
-    //         responsive: true,
-    //         legend: {
-    //             position: 'top',
-    //         }
-    //     }
-    // });
+    
 
     var meanChartNeverBF = document.getElementById('neverbf').getContext('2d');
     window.myBar = new Chart(meanChartNeverBF, {
@@ -851,25 +819,100 @@ window.onload = function () {
         }
     });
 
-    // var meanChartRajasthanBF = document.getElementById('rjbf').getContext('2d');
-    // window.myBar = new Chart(meanChartRajasthanBF, {
-    //     type: 'bar',
-    //     data: rajasthanBF,
-    //     options: {
-    //         scales: {
-    //             yAxes: [{
-    //                 ticks: {
-    //                     min: 0
-    //                 }
-    //             }]
-    //         },
-    //         responsive: true,
-    //         legend: {
-    //             position: 'top',
-    //         }
-    //     }
-    // });
+    var meanChartWaterMonth = document.getElementById('watermonth').getContext('2d');
+    window.myBar = new Chart(meanChartWaterMonth, {
+        type: 'bar',
+        data: waterMonth,
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        min: 0
+                    }
+                }]
+            },
+            responsive: true,
+            legend: {
+                position: 'top',
+            }
+        }
+    });
 
+    var meanChartAnimalMilkMonth = document.getElementById('animalmilkmonth').getContext('2d');
+    window.myBar = new Chart(meanChartAnimalMilkMonth, {
+        type: 'bar',
+        data: animalMilkMonth,
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        min: 0
+                    }
+                }]
+            },
+            responsive: true,
+            legend: {
+                position: 'top',
+            }
+        }
+    });
+
+    var meanChartSemiSolidFood = document.getElementById('semisolidfood').getContext('2d');
+    window.myBar = new Chart(meanChartSemiSolidFood, {
+        type: 'bar',
+        data: semiSolidFood,
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        min: 0
+                    }
+                }]
+            },
+            responsive: true,
+            legend: {
+                position: 'top',
+            }
+        }
+    });
+
+    var meanChartSolidFood = document.getElementById('solidfood').getContext('2d');
+    window.myBar = new Chart(meanChartSolidFood, {
+        type: 'bar',
+        data: solidFood,
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        min: 0
+                    }
+                }]
+            },
+            responsive: true,
+            legend: {
+                position: 'top',
+            }
+        }
+    });
+
+    var meanChartVegetableFood = document.getElementById('vegetablefood').getContext('2d');
+    window.myBar = new Chart(meanChartVegetableFood, {
+        type: 'bar',
+        data: vegetableFood,
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        min: 0
+                    }
+                }]
+            },
+            responsive: true,
+            legend: {
+                position: 'top',
+            }
+        }
+    });
     
     //show of piechart
     var first_breastfeed = document.getElementById('totalbf').getContext('2d');
