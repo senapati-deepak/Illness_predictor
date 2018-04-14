@@ -1641,14 +1641,11 @@ h1, h2, h3, h4, h5, h6, figure {
 /*# sourceMappingURL=style.css.map */
 
 #floating-button {
-  width: 100px;
-  height: 35px;
-  background: rgba(0, 0, 0,0.5);
   position: fixed;
   bottom: 30px;
   right: 30px;
   cursor: pointer;
-  /* box-shadow: 0px 2px 5px #666; */
+  box-shadow: 0px 2px 5px #666;
 }
 
 /* The Modal (background) */
@@ -1662,8 +1659,6 @@ h1, h2, h3, h4, h5, h6, figure {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
 /* Modal Content */
@@ -1675,17 +1670,21 @@ h1, h2, h3, h4, h5, h6, figure {
     width: 80%;
 }
 
+.modal-content #form-heading{
+
+}
 /* The Close Button */
 .close {
-    color: #aaaaaa;
+    color:white;
     float: right;
-    font-size: 28px;
+    font-size: 40px;
     font-weight: bold;
-}
+    text-align: center;
+  }
 
 .close:hover,
 .close:focus {
-    color: #000;
+    color: #fefefe;
     text-decoration: none;
     cursor: pointer;
 }
@@ -1693,4 +1692,51 @@ h1, h2, h3, h4, h5, h6, figure {
 
 #prediction{
   color:blue;
+}
+
+#modal-header{
+    background-color: #353b43;
+    color: white !important;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px !important;
+}
+
+#modal-header h1{
+  color:white;
+  text-align: center;
+}
+
+#modal-body {
+  height: 400px;
+  overflow-y: auto;
+  font-size: 20px;
+  font-family: "Almendra", sans-serif;
+  text-align: left;
+}
+
+#modal-body>h3 {
+  color: rgb(0, 0, 0);
+}
+
+#modal-body>p {
+  color: rgb(94, 92, 92);
+  font-size: 16px;
+}
+
+@media screen and (max-device-width: 500px) {
+  .modal-dialog {
+      overflow-y: initial !important;
+      width: 100%;
+  }
+  .modal-body {
+      height: 350px;
+  }
+  .modal-header,
+  h4 {
+      font-size: 18px;
+  }
+  .modal-header {
+      padding: 5px !important;
+  }
 }
