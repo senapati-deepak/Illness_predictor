@@ -21,37 +21,25 @@ var barChartData = {
 var meanHeightData = {
     labels: ['Uttarakhand', 'Rajasthan', 'Uttar Pradesh', 'Bihar', 'Assam', 'Jharkhand', 'Odisha', 'Chhattisgarh', 'Madhya Pradesh'],
     datasets: [{
-        label: "in cms",
+        label: "Mean Height(in cms)",
         backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
         borderColor: window.chartColors.red,
         borderWidth: 1,
         data: [
             86.273560, 84.284886, 81.319572, 83.044609, 86.165794, 85.230291, 84.309879, 84.931508, 85.235022
         ]
-    }]
-
-};
-
-var meanHeightMale = {
-    labels: ['Uttarakhand', 'Rajasthan', 'Uttar Pradesh', 'Bihar', 'Assam', 'Jharkhand', 'Odisha', 'Chhattisgarh', 'Madhya Pradesh'],
-    datasets: [{
-        label: "in cms",
-        backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
-        borderColor: window.chartColors.red,
+    },{
+        label: "Mean Height of Males(in cms)",
+        backgroundColor: color(window.chartColors.orange).alpha(0.5).rgbString(),
+        borderColor: window.chartColors.orange,
         borderWidth: 1,
         data: [
             86.775910, 84.630406, 81.631399, 82.847863, 86.599632, 85.616457, 84.844245, 84.413812, 85.049696
         ]
-    }]
-
-};
-
-var meanHeightFemale = {
-    labels: ['Uttarakhand', 'Rajasthan', 'Uttar Pradesh', 'Bihar', 'Assam', 'Jharkhand', 'Odisha', 'Chhattisgarh', 'Madhya Pradesh'],
-    datasets: [{
-        label: "in cms",
-        backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
-        borderColor: window.chartColors.red,
+    },{
+        label: "Mean Height of Females(in cms)",
+        backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
+        borderColor: window.chartColors.blue,
         borderWidth: 1,
         data: [
             85.717790, 83.907955, 80.970772, 83.261188, 85.687860, 84.820511, 83.722821, 85.533816, 85.442577
@@ -63,37 +51,25 @@ var meanHeightFemale = {
 var meanWeight = {
     labels: ['Uttarakhand', 'Rajasthan', 'Uttar Pradesh', 'Bihar', 'Assam', 'Jharkhand', 'Odisha', 'Chhattisgarh', 'Madhya Pradesh'],
     datasets: [{
-        label: "in cms",
+        label: "Mean Weight(in kgs)",
         backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
         borderColor: window.chartColors.red,
         borderWidth: 1,
         data: [
             11.741458, 10.801541, 10.435524, 10.427538, 11.312061, 10.974762, 10.794475, 10.597504, 11.138301
         ]
-    }]
-
-};
-
-var meanWeightMale = {
-    labels: ['Uttarakhand', 'Rajasthan', 'Uttar Pradesh', 'Bihar', 'Assam', 'Jharkhand', 'Odisha', 'Chhattisgarh', 'Madhya Pradesh'],
-    datasets: [{
-        label: "in cms",
-        backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
-        borderColor: window.chartColors.red,
+    },{
+        label: "Mean Weight of Males(in kgs)",
+        backgroundColor: color(window.chartColors.orange).alpha(0.5).rgbString(),
+        borderColor: window.chartColors.orange,
         borderWidth: 1,
         data: [
             11.902085, 10.987350, 10.575979, 10.409367, 11.559792, 11.124187, 11.065410, 10.624647, 11.258074
         ]
-    }]
-
-};
-
-var meanWeightFemale = {
-    labels: ['Uttarakhand', 'Rajasthan', 'Uttar Pradesh', 'Bihar', 'Assam', 'Jharkhand', 'Odisha', 'Chhattisgarh', 'Madhya Pradesh'],
-    datasets: [{
-        label: "in cms",
-        backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
-        borderColor: window.chartColors.red,
+    },{
+        label: "Mean Weight of Females(in kgs)",
+        backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
+        borderColor: window.chartColors.blue,
         borderWidth: 1,
         data: [
             11.563750, 10.598841, 10.278416, 10.447540, 11.039151, 10.816198, 10.496823, 10.565924, 11.004162
@@ -665,86 +641,10 @@ window.onload = function () {
         }
     });
 
-    var meanChartHeightMale = document.getElementById('meanheightmale').getContext('2d');
-    window.myBar = new Chart(meanChartHeightMale, {
-        type: 'bar',
-        data: meanHeightMale,
-        options: {
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        min: 70
-                    }
-                }]
-            },
-            responsive: true,
-            legend: {
-                position: 'top',
-            }
-        }
-    });
-
-    var meanChartHeightFemale = document.getElementById('meanheightfemale').getContext('2d');
-    window.myBar = new Chart(meanChartHeightFemale, {
-        type: 'bar',
-        data: meanHeightFemale,
-        options: {
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        min: 70
-                    }
-                }]
-            },
-            responsive: true,
-            legend: {
-                position: 'top',
-            }
-        }
-    });
-
     var meanChartWeight = document.getElementById('meanweight').getContext('2d');
     window.myBar = new Chart(meanChartWeight, {
         type: 'bar',
         data: meanWeight,
-        options: {
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        min: 0
-                    }
-                }]
-            },
-            responsive: true,
-            legend: {
-                position: 'top',
-            }
-        }
-    });
-
-    var meanChartWeightMale = document.getElementById('meanweightmale').getContext('2d');
-    window.myBar = new Chart(meanChartWeightMale, {
-        type: 'bar',
-        data: meanWeightMale,
-        options: {
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        min: 0
-                    }
-                }]
-            },
-            responsive: true,
-            legend: {
-                position: 'top',
-            }
-        }
-    });
-
-    var meanChartWeightFemale = document.getElementById('meanweightfemale').getContext('2d');
-    window.myBar = new Chart(meanChartWeightFemale, {
-        type: 'bar',
-        data: meanWeightFemale,
         options: {
             scales: {
                 yAxes: [{
