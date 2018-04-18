@@ -46,6 +46,7 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
 
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
@@ -827,142 +828,136 @@
 			<div class="modal-content">
 				<div id="modal-header">
 					<span class="close">&times;</span>
-					<h1>PREDICTION</h1>
+					<h1>Prediction Data Input</h1>
 				</div>
 				<div id="modal-body">
 					<div id="form">
-							<form id="predform">
-								<div class="form-group">
-                                    <label for="state">State</label>
-                                    <select type="text" id="state" name="state">
-										<option value="ns" style="color:black;">No Select</option>
-                                        <option value=5 style="color:black;">Uttarakhand</option>
-                                        <option value=8 style="color:black;">Rajasthan</option>
-                                        <option value=9 style="color:black;">Uttar Pradesh</option>
-                                        <option value=10 style="color:black;">Bihar</option>
-                                        <option value=18 style="color:black;">Assam</option>
-                                        <option value=20 style="color:black;">Jharkhand</option>
-                                        <option value=21 style="color:black;">Odisha</option>
-                                        <option value=22 style="color:black;">Chhattisgarh</option>
-                                        <option value=23 style="color:black;">Madhya Pradesh</option>
-                                    </select>
-								</div>
-								<div class="form-group">
-                                    <label for="Gender">Gender</label>
-                                    <select type="text" id="gender" name="gender">
-										<option value="ns" style="color:black;">No Select</option>
-                                        <option value="Male" style="color:black;">Male</option>
-                                        <option value="Female" style="color:black;">Female</option>
-                                    </select>
-                                </div>
-								<div id="form-group">
-									<div id="row">
-										<label for="age" class="col-sm-3" style="text-align:left;">Age</label>
-										<input name="age" class="col-sm-3" type="text" placeholder="Days" id="days">
-										<input name="age" class="col-sm-3" type="text" placeholder="Months" id="months">
-										<input name="age" class="col-sm-3" type="text" placeholder="Years" id="years">
+							<form  class="form-custom" id="predform">
+								<div class="row">
+									<div class="form-group col-lg-6 col-md-6 col-sm-6">
+										<label for="state">State</label>
+										<select class="form-control" type="text" id="state" name="state">
+											<option value="ns" style="color:black;">No Select</option>
+											<option value=5 style="color:black;">Uttarakhand</option>
+											<option value=8 style="color:black;">Rajasthan</option>
+											<option value=9 style="color:black;">Uttar Pradesh</option>
+											<option value=10 style="color:black;">Bihar</option>
+											<option value=18 style="color:black;">Assam</option>
+											<option value=20 style="color:black;">Jharkhand</option>
+											<option value=21 style="color:black;">Odisha</option>
+											<option value=22 style="color:black;">Chhattisgarh</option>
+											<option value=23 style="color:black;">Madhya Pradesh</option>
+										</select>
 									</div>
-									<p>(if below 1 month mention days else if below 1 year mention months else mention year.)</p>
-								</div>							
-								<div id=form-group>
-									<label for="height">Height</label>
-                                    <input name="height" type="text" placeholder="Height" id="height">
-								</div>					
-								<br>
-								<div id=form-group>
-									<label for="weight">Weight</label>
-                                    <input name="weight" type="text" placeholder="Weight" id="weight">
-								</div>							
-								<br>
-								<div id=form-group>
-									<label for="iodine-content">Iodine-Content</label>
-                                    <input name="iodine" type="text" placeholder="Iodine-Content" id="iodine">
 								</div>
-								<br>
-								<div id=form-group>
-									<label for="haemoglobin-content">Haemoglobin-Content</label>
-                                    <input name="haemoglobin" type="text" placeholder="Haemoglobin-Content" id="haemoglobin">
-								</div>
-								<br>
-								<div>
-									<label for="firstBf">First Breastfeed</label>
-									<select type="text" id="firstBf" name="firstBf">
-										<option value="ns" style="color:black;">No Select</option>
-										<option value=1 style="color:black;">Within 1hr of Birth</option>
-										<option value=2 style="color:black;">Within 1-24hr of Birth</option>
-										<option value=3 style="color:black;">Within 2-3days of Birth</option>
-										<option value=4 style="color:black;">After 3days of Birth</option>
-										<option value=5 style="color:black;">Never</option>
-									</select>
-								</div>
-								<div class="form-group">
-                                    <label for="isCurrBf">Is Current Breastfeeding</label>
-                                    <select type="text" id="isCurrBf" name="isCurrBf">
-										<option value="ns" style="color:black;">No Select</option>
-                                        <option value="1" style="color:black;">Yes</option>
-                                        <option value="2" style="color:black;">No</option>
-                                    </select>
-                                </div>
-								<div id="form-group">
-									<div id="row">
-										<label for="bfduration" class="col-sm-6" style="text-align:left;">Duration of Breastfeed(Exclusively)</label>
-										<input name="bfduration" class="col-sm-2" type="text" placeholder="Days" id="bfDays">
-										<input name="bfduration" class="col-sm-2" type="text" placeholder="Months" id="bfMonths">
-										<input name="bfduration" class="col-sm-2" type="text" placeholder="Years" id="bfYears">
+								<div class="row">
+									<div class="form-group  col-lg-6 col-md-6 col-sm-6 col-xs-6">
+										<label for="Gender">Gender</label>
+										<select class="form-control" type="text" id="gender" name="gender">
+											<option value="ns" style="color:black;">No Select</option>
+											<option value="Male" style="color:black;">Male</option>
+											<option value="Female" style="color:black;">Female</option>
+										</select>
 									</div>
-									<br>
-									<p>(if below 1 month mention days else if below 1 year mention months else mention year.)</p>
-								</div>
-								<div id="form-group">
-									<div id="row">
-										<label for="watermonth" class="col-sm-6" style="text-align:left;">First Water Month</label>
-										<input name="watermonth" class="col-sm-2" type="text" placeholder="Days" id="wmDays">
-										<input name="watermonth" class="col-sm-2" type="text" placeholder="Months" id="wmMonths">
-										<input name="watermonth" class="col-sm-2" type="text" placeholder="Years" id="wmYears">
+									<div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-6">
+										<label for="age" style="text-align:left;">Age</label>
+										<input class="form-control" name="age" type="text" placeholder="" id="age">
+										<select class="form-control" type="text" id="ageunit">
+											<option value="days" style="color:black;">Days</option>
+											<option value="months" style="color:black;">Months</option>
+											<option value="years" style="color:black;">Years</option>
+										</select>
 									</div>
-									<br>
-									<p>(if below 1 month mention days else if below 1 year mention months else mention year.)</p>
 								</div>
-								<div id="form-group">
-									<div id="row">
-										<label for="animalmilk" class="col-sm-6" style="text-align:left;">First Animal Milk Month</label>
-										<input name="animalmilk" class="col-sm-2" type="text" placeholder="Days" id="ammDays">
-										<input name="animalmilk" class="col-sm-2" type="text" placeholder="Months" id="ammMonths">
-										<input name="animalmilk" class="col-sm-2" type="text" placeholder="Years" id="ammYears">
+								<div class="row">
+									<div class="form-group  col-lg-6 col-md-6 col-sm-6 col-xs-6">
+										<label for="height">Height (cm)</label>
+										<input class="form-control" name="height" type="text" placeholder="Height" id="height">
 									</div>
-									<br>
-									<p>(if below 1 month mention days else if below 1 year mention months else mention year.)</p>
+									<div class="form-group  col-lg-6 col-md-6 col-sm-6 col-xs-6">
+										<label for="weight">Weight (kg)</label>
+										<input class="form-control" name="weight" type="text" placeholder="Weight" id="weight">
+									</div>	
+								</div>								
+								<div class="row">
+									<div class="form-group  col-lg-6 col-md-6 col-sm-6 col-xs-6">
+										<label for="iodine-content">Iodine-Content</label>
+										<input class="form-control" name="iodine" type="text" placeholder="Iodine-Content" id="iodine">
+									</div>
+									<div class="form-group  col-lg-6 col-md-6 col-sm-6 col-xs-6">
+										<label for="haemoglobin-content">Haemoglobin-Content</label>
+										<input class="form-control" name="haemoglobin" type="text" placeholder="Haemoglobin-Content" id="haemoglobin">
+									</div>
 								</div>
-								<div id="form-group">
-									<div id="row">
-										<label for="semisolid" class="col-sm-6" style="text-align:left;">First Semisolid Month</label>
-										<input name="semisolid" class="col-sm-2" type="text" placeholder="Days" id="ssfDays">
-										<input name="semisolid" class="col-sm-2" type="text" placeholder="Months" id="ssfMonths">
-										<input name="semisolid" class="col-sm-2" type="text" placeholder="Years" id="ssfYears">
+								<div class="row">
+									<div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-6">
+										<label for="firstBf">First Breastfeed</label>
+										<select class="form-control" type="text" id="firstBf" name="firstBf">
+											<option value="ns" style="color:black;">No Select</option>
+											<option value=1 style="color:black;">Within 1hr of Birth</option>
+											<option value=2 style="color:black;">Within 1-24hr of Birth</option>
+											<option value=3 style="color:black;">Within 2-3days of Birth</option>
+											<option value=4 style="color:black;">After 3days of Birth</option>
+											<option value=5 style="color:black;">Never</option>
+										</select>
 									</div>
-									<br>
-									<p>(if below 1 month mention days else if below 1 year mention months else mention year.)</p>
-								</div>
-								<div id="form-group">
-									<div id="row">
-										<label for="solid" class="col-sm-6" style="text-align:left;">First Solid Food</label>
-										<input name="solid" class="col-sm-2" type="text" placeholder="Days" id="sfDays">
-										<input name="solid" class="col-sm-2" type="text" placeholder="Months" id="sfMonths">
-										<input name="solid" class="col-sm-2" type="text" placeholder="Years" id="sfYears">
+									<div class="form-group  col-lg-6 col-md-6 col-sm-6 col-xs-6">
+										<label for="isCurrBf">Is Current Breastfeeding</label>
+										<select class="form-control" type="text" id="isCurrBf" name="isCurrBf">
+											<option value="ns" style="color:black;">No Select</option>
+											<option value="1" style="color:black;">Yes</option>
+											<option value="2" style="color:black;">No</option>
+										</select>
 									</div>
-									<br>
-									<p>(if below 1 month mention days else if below 1 year mention months else mention year.)</p>
-								</div>
-								<div id="form-group">
-									<div id="row">
-										<label for="vegetable" class="col-sm-6" style="text-align:left;">First Vegetable</label>
-										<input name="vegetable" class="col-sm-2" type="text" placeholder="Days" id="vDays">
-										<input name="vegetable" class="col-sm-2" type="text" placeholder="Months" id="vMonths">
-										<input name="vegetable" class="col-sm-2" type="text" placeholder="Years" id="vYears">
-									</div>
-									<br>
-									<p>(if below 1 month mention days else if below 1 year mention months else mention year.)</p>
 								</div>									
+								<div class="row">
+									<div class="form-group  col-lg-6 col-md-6 col-sm-6 col-xs-6">
+										<label for="bfduration" style="text-align:left;">Duration of Breastfeed (Exclusively)</label>
+										<input class="form-control" name="bfduration" class="col-sm-2" type="text"  id="bf">
+										<select class="form-control" type="text" id="bfunit">
+											<option value="days" style="color:black;">Days</option>
+											<option value="months" style="color:black;">Months</option>
+											<option value="years" style="color:black;">Years</option>
+										</select>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group  col-lg-6 col-md-6 col-sm-6 col-xs-6">
+										<label for="watermonth" style="text-align:left;">First Water Month</label>
+										<input class="form-control" name="watermonth" class="col-sm-2" type="text" placeholder="In Months" id="wmMonths">
+									</div>
+									<div class="form-group  col-lg-6 col-md-6 col-sm-6 col-xs-6">
+											<label for="animalmilk" style="text-align:left;">First Animal Milk Month</label>
+											<input class="form-control" name="animalmilk" class="col-sm-2" type="text" placeholder="In Months" id="ammMonths">
+									</div>
+									<div class="form-group  col-lg-6 col-md-6 col-sm-6 col-xs-6">
+											<label for="semisolid" style="text-align:left;">First Semisolid Month</label>
+											<input class="form-control" name="semisolid" class="col-sm-2" type="text" placeholder="In Months" id="ssfMonths">
+										
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group  col-lg-6 col-md-6 col-sm-6 col-xs-6">
+											<label for="solid" style="text-align:left;">First Solid Food</label>
+											<input class="form-control" name="solid" class="col-sm-2" type="text"  id="sf">
+											<select class="form-control" type="text" id="sfunit">
+												<option value="days" style="color:black;">Days</option>
+												<option value="months" style="color:black;">Months</option>
+												<option value="years" style="color:black;">Years</option>
+											</select>
+										
+									</div>
+									<div class="form-group  col-lg-6 col-md-6 col-sm-6 col-xs-6">
+											<label for="vegetable" style="text-align:left;">First Vegetable</label>
+											<input class="form-control" name="vegetable" class="col-sm-2" type="text"  id="fv">
+											<select class="form-control" type="text" id="fvunit">
+												<option value="days" style="color:black;">Days</option>
+												<option value="months" style="color:black;">Months</option>
+												<option value="years" style="color:black;">Years</option>
+											</select>
+										
+									</div>	
+								</div>								
 							</form>
 					</div>
 				</div>

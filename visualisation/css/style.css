@@ -1597,14 +1597,24 @@ h1, h2, h3, h4, h5, h6, figure {
   box-shadow: none;
   background: transparent;
   border: 2px solid rgba(0, 0, 0, 0.1);
-  height: 54px;
   font-size: 14px;
   font-weight: 400;
 }
 .form-control:active, .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #000;
+  border-color: #1dcaff;
+}
+
+.form-custom > * {
+  margin:5px 3px;
+  font-family: 'Arvo', serif;
+}
+
+
+.form-custom label {
+  color : #0084b4	 !important; 
+  font-size : 18px;
 }
 
 .row-pb-md {
@@ -1695,16 +1705,20 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #modal-header{
-    background-color: #353b43;
-    color: white !important;
+    color: black !important;
     text-align: center;
     font-size: 30px;
     padding: 10px !important;
 }
 
+#modal-header span {
+  color : black;
+}
+
 #modal-header h1{
-  color:white;
-  text-align: center;
+  color: #036588 !important;
+  text-align: left;
+  text-shadow : 0.5px 0.5px 0.5px black;
 }
 
 #modal-body {
@@ -1714,6 +1728,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-family: "Almendra", sans-serif;
   text-align: left;
 }
+
 
 #modal-body>h3 {
   color: rgb(0, 0, 0);
