@@ -1,41 +1,65 @@
 #python3
+from flask import Flask, request, jsonify
+import json
+from flask_cors import CORS
 
 import pandas as pd
 import numpy as np
 import pickle
 
+app = Flask(__name__)
+CORS(app)
+
+
+@app.route("/")
+def hello():
+    return "testing"
+
+
+@app.route("/predict", methods=['POST'])
+def predict():
+    print("hello")
+    print(request.form)
+    state = float(request.form['state'])
+    i = float(request.form['iodine'])
+    sex = float(request.form['gender'])
+    age = float(request.form['age'])
+    weight = float(request.form['weight'])
+    height = float(request.form['height'])
+    haem = float(request.form['haemoglobin'])
+    first_breast_feed = float(request.form['firstBf'])
+    curr_breast_feed = float(request.form['isCurrBf'])
+    no_bf = float(request.form['bfduration'])
+    water = float(request.form['watermonth'])
+    ani = float(request.form['animalmilk'])
+    semi_solid = float(request.form['semisolid'])
+    solid = float(request.form['solid'])
+    veg = float(request.form['vegetable'])
+    attributes = np.array([state, i, sex, age, weight, height, haem, first_breast_feed, curr_breast_feed, no_bf, water, ani, semi_solid, solid, veg])
+    predictor(attributes)
+
+
 def res(x):
     if x == 0:
-        print('No illness')
+        return 'No illness'
     elif x == 1:
-        print('Dyssentry/Diarhhoea')
+        return 'Dyssentry/Diarhhoea'
     elif x == 2:
-        print('Acute Respiratory Infection')
+        return 'Acute Respiratory Infection'
     elif x == 3:
-        print('Fever of any type')
+        return 'Fever of any type'
     elif x == 4:
-        print('Other illnesses') 
+        return 'Other illnesses'
+
 
 def predictor(test):
     classifier = pickle.load(open('model.sav', 'rb'))
     test = test.reshape(1, -1)
     result = classifier.predict(test)
-    res(result[0])
+    print(res(result[0]))
+    ret = {'type' : "JSON/TXT"}
+    ret['result'] = str(res(result[0]))
+    return jsonify(ret)
 
-state = float(input("State Code:  "))
-i = float(input("Iodine Code:  "))
-sex = float(input("Sex: "))
-age = float(input("Age:"))
-weight = float(input("Weight (in kg):  "))
-height = float(input("Height (in cm):  "))
-haem = float(input("Haemoglobin:  "))
-first_breast_feed = float(input("Month when first Breast fed:  "))
-curr_breast_feed = float(input("Is currently breast fed:  "))
-no_bf = float(input("No. of Months/days breast fed:  "))
-water = float(input("Month when Water was first fed:  "))
-ani = float(input("Month when Animal Milk was first fed:  "))
-semi_solid = float(input("Month when Semisolid food was first fed:  "))
-solid = float(input("Month when Solid was first fed:  "))
-veg = float(input("Month when Vegetables were first fed:  "))
-attributes = np.array([state, i, sex, age, weight, height, haem, first_breast_feed, curr_breast_feed, no_bf, water, ani, semi_solid, solid, veg])
-predictor(attributes)
+
+app.run()
