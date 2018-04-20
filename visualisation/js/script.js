@@ -61,6 +61,7 @@ $(document).ready(function() {
         console.log(formdata);
 
         $.post("http://127.0.0.1:5000/predict", formdata , function (data, status) {
+            console.log("succesful");
             console.log(data);
         });
     });

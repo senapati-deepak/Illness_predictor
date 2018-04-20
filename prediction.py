@@ -10,7 +10,6 @@ import pickle
 app = Flask(__name__)
 CORS(app)
 
-
 @app.route("/")
 def hello():
     return "testing"
@@ -36,7 +35,12 @@ def predict():
     solid = float(request.form['solid'])
     veg = float(request.form['vegetable'])
     attributes = np.array([state, i, sex, age, weight, height, haem, first_breast_feed, curr_breast_feed, no_bf, water, ani, semi_solid, solid, veg])
-    predictor(attributes)
+    response = predictor(attributes)
+    print("the response")
+    print(response)
+    response = jsonify(response)
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
 
 
 def res(x):
@@ -56,10 +60,14 @@ def predictor(test):
     classifier = pickle.load(open('model.sav', 'rb'))
     test = test.reshape(1, -1)
     result = classifier.predict(test)
-    print(res(result[0]))
+    print("result")
+    print(res(result[0]))    
     ret = {'type' : "JSON/TXT"}
     ret['result'] = str(res(result[0]))
-    return jsonify(ret)
+    print(ret)
+    return ret
+    
+
 
 
 app.run()
