@@ -3,9 +3,13 @@ $(document).ready(function() {
     $("#prediction").click(function(){
         $("#predictionmodal").show();  
        });
-    $('span').click(function(){
+    $('span.close').click(function(){
         $("#predictionmodal").hide();
     });
+    $('span.close1').click(function(){
+        $("#resultmodal").hide();
+    });
+    
 
     //console.log($("#predform").serializeObject());
 
@@ -60,9 +64,12 @@ $(document).ready(function() {
 
         console.log(formdata);
 
+        
+
         $.post("http://127.0.0.1:5000/predict", formdata , function (data, status) {
-            console.log("succesful");
             console.log(data);
+            $("#resultmodal").show();
+            $("#resultpara").html(data.result);
         });
     });
 });
