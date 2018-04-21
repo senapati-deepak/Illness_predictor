@@ -147,7 +147,7 @@ var neverBF = {
 var waterMonth = {
     labels: ['Uttarakhand', 'Rajasthan', 'Uttar Pradesh', 'Bihar', 'Assam', 'Jharkhand', 'Odisha', 'Chhattisgarh', 'Madhya Pradesh'],
     datasets: [{
-        label: "in percentage grams",
+        label: "in months",
         backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
         borderColor: window.chartColors.red,
         borderWidth: 1,
@@ -161,7 +161,7 @@ var waterMonth = {
 var animalMilkMonth = {
     labels: ['Uttarakhand', 'Rajasthan', 'Uttar Pradesh', 'Bihar', 'Assam', 'Jharkhand', 'Odisha', 'Chhattisgarh', 'Madhya Pradesh'],
     datasets: [{
-        label: "in percentage grams",
+        label: "in months",
         backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
         borderColor: window.chartColors.red,
         borderWidth: 1,
@@ -175,7 +175,7 @@ var animalMilkMonth = {
 var semiSolidFood = {
     labels: ['Uttarakhand', 'Rajasthan', 'Uttar Pradesh', 'Bihar', 'Assam', 'Jharkhand', 'Odisha', 'Chhattisgarh', 'Madhya Pradesh'],
     datasets: [{
-        label: "in percentage grams",
+        label: "in months",
         backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
         borderColor: window.chartColors.red,
         borderWidth: 1,
@@ -189,7 +189,7 @@ var semiSolidFood = {
 var solidFood = {
     labels: ['Uttarakhand', 'Rajasthan', 'Uttar Pradesh', 'Bihar', 'Assam', 'Jharkhand', 'Odisha', 'Chhattisgarh', 'Madhya Pradesh'],
     datasets: [{
-        label: "in percentage grams",
+        label: "in months",
         backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
         borderColor: window.chartColors.red,
         borderWidth: 1,
@@ -203,7 +203,7 @@ var solidFood = {
 var vegetableFood = {
     labels: ['Uttarakhand', 'Rajasthan', 'Uttar Pradesh', 'Bihar', 'Assam', 'Jharkhand', 'Odisha', 'Chhattisgarh', 'Madhya Pradesh'],
     datasets: [{
-        label: "in percentage grams",
+        label: "in months",
         backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
         borderColor: window.chartColors.red,
         borderWidth: 1,
@@ -845,12 +845,12 @@ window.onload = function () {
     var illness_assam_pie = document.getElementById('assamillness').getContext('2d');
     window.myPie = new Chart(illness_assam_pie, illness_assam);
 
-    var firstPieChart = document.getElementById('chart-area').getContext('2d');
-    window.myPie = new Chart(firstPieChart, config);
+    //var firstPieChart = document.getElementById('chart-area').getContext('2d');
+    //window.myPie = new Chart(firstPieChart, config);
 
     
     //show of sctterplots
-    var firstScatterPlot = document.getElementById('scatter1').getContext('2d');
+   /* var firstScatterPlot = document.getElementById('scatter1').getContext('2d');
     window.myScatter = Chart.Scatter(firstScatterPlot, {
         data: scatterChartData,
         options: {
@@ -859,9 +859,9 @@ window.onload = function () {
                 text: 'Chart.js Scatter Chart'
             },
         }
-    });
+    }); */
 
-    var secondScatterPlot = document.getElementById('scatter2').getContext('2d');
+   /* var secondScatterPlot = document.getElementById('scatter2').getContext('2d');
     window.myScatter = Chart.Scatter(secondScatterPlot, {
         data: scatterChartData2,
         options: {
@@ -870,6 +870,6 @@ window.onload = function () {
                 text: 'Second Scatter Chart'
             },
         }
-    });
+    }); */
 
 };

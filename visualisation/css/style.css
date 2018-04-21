@@ -1755,3 +1755,23 @@ h1, h2, h3, h4, h5, h6, figure {
       padding: 5px !important;
   }
 }
+
+#resultmodal{
+  height : 100px;
+  width : 400px;
+  margin : auto;
+  position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index : 2;
+    background-color: white;
+    text-align: center;
+    padding : 5px 10px 10px 2px;
+    border-radius: 5px;
+    border : 1px solid black;
+    display : none ;
+    box-shadow : 2px 2px 2px 2px #b3b3b3;
+}
