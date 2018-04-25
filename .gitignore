@@ -1,2 +1,4 @@
 *.sav
 .vscode
+.ipynb_checkpoints
+venv
