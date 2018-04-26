@@ -1655,7 +1655,6 @@ h1, h2, h3, h4, h5, h6, figure {
   bottom: 30px;
   right: 30px;
   cursor: pointer;
-  box-shadow: 0px 2px 5px #666;
 }
 
 /* The Modal (background) */
@@ -1700,9 +1699,6 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 
-#prediction{
-  color:blue;
-}
 
 #modal-header{
     color: black !important;
@@ -1737,6 +1733,17 @@ h1, h2, h3, h4, h5, h6, figure {
 #modal-body>p {
   color: rgb(94, 92, 92);
   font-size: 16px;
+}
+
+.submit {
+  background: #00aced !important;
+  border-radius: 0px !important;
+  border: none;
+  text-transform: uppercase;
+  box-shadow: 1px 1px 1px #888;
+  color: #fff;
+  padding: 10px;
+  margin-left: 20px;
 }
 
 @media screen and (max-device-width: 500px) {
