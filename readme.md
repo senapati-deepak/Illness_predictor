@@ -26,24 +26,13 @@ We have used a number of libraries and tools:
 * **Chart.JS** - For visualisations.
 
 
-### Installation
+### Installing Dependencies 
 
-Dillinger requires [Node.js](https://nodejs.org/) v4+ to run.
-
-Install the dependencies and devDependencies and start the server.
-
+To install the libraries required to execute the scripts and run the web-application go to the root folder and execute the following commands:
 ```sh
-$ cd dillinger
-$ npm install -d
-$ node app
+$ pip3 intall -r requirements.txt
 ```
 
-For production environments...
-
-```sh
-$ npm install --production
-$ NODE_ENV=production node app
-```
 
 ### How to run?
 Go to the root directory of the project folder and execute the following commands:
