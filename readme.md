@@ -28,14 +28,14 @@ We have used a number of libraries and tools:
 
 ### Installing Dependencies 
 
-To install the libraries required to execute the scripts and run the web-application go to the root folder and execute the following commands:
+* To install the libraries required to execute the scripts and run the web-application go to the root folder and execute the following commands:
 ```sh
 $ pip3 intall -r requirements.txt
 ```
-
+* Extract model.sav from model.sav.tar.gz and place it in the root folder.
 
 ### How to run?
-Go to the root directory of the project folder and execute the following commands:
+* Go to the root directory of the project folder and execute the following commands:
 ```sh
 $ python3 prediction.py
 $ xdg-open visualisations/index.html
