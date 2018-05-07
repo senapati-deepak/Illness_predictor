@@ -12,7 +12,7 @@ component has been introduced in AHS to collect data on nutritional status, life
 We have used a number of libraries and tools:
 ##### For Model:
 * **Python3** - Used for scripting our model. And many of its libraries were used:
-    * **Scikit-Learn 0.19.1** - For 
+    * **Scikit-Learn 0.19.1** 
     * **Pandas 0.22.0** - For Data Cleaning.
     * **NumPy 1.14.2** - For mathematical opearations.
     * **Matplotlib 2.2.2** - For visualisations.
@@ -30,7 +30,7 @@ We have used a number of libraries and tools:
 
 * To install the libraries required to execute the scripts and run the web-application go to the root folder and execute the following commands:
 ```sh
-$ pip3 intall -r requirements.txt
+$ pip3 install -r requirements.txt
 ```
 * Extract model.sav from model.sav.tar.gz and place it in the root folder.
 
@@ -38,5 +38,8 @@ $ pip3 intall -r requirements.txt
 * Go to the root directory of the project folder and execute the following commands:
 ```sh
 $ python3 prediction.py
-$ xdg-open visualisations/index.html
+```
+* In a new terminal window execute the following command:
+```sh
+$ xdg-open visualisation/index.html
 ```
