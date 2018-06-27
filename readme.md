@@ -32,7 +32,10 @@ We have used a number of libraries and tools:
 ```sh
 $ pip3 install -r requirements.txt
 ```
-* Extract model.sav from model.sav.tar.gz and place it in the root folder.
+* Generate the model.sav file by executing following command
+```sh
+$ python3 model.py
+```
 
 ### How to run?
 * Go to the root directory of the project folder and execute the following commands:
